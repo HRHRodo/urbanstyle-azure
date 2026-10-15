@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Urban Style</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="imgs/logo.png" alt="Urban Style" class="logo-img"/>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Hablemos <span>✦</span></h1>
+    <p>Estamos para ayudarte con lo que necesites</p>
+  </div>
+
+  <section class="contacto-section">
+    <div class="contacto-info">
+      <h3>Información de contacto</h3>
+      <div class="info-card">
+        <span>📍</span>
+        <div>
+          <h4>Ubicación</h4>
+          <p>Tantoyuquita, Tamaulipas, Mexico</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <span>📱</span>
+        <div>
+          <h4>WhatsApp</h4>
+          <p>+52 (831) 160-7062</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <span>📸</span>
+        <div>
+          <h4>Instagram</h4>
+          <p>@urbanstyle.mx</p>
+        </div>
+      </div>
+      
+      <div class="info-card">
+        <span>🕐</span>
+        <div>
+          <h4>Horario</h4>
+          <p>Lun – Sab · 7: 00 am – 10:00 pm</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto-form">
+      <h3>Mándanos un mensaje</h3>
+      <div class="form-group">
+        <label>Tu nombre</label>
+        <input type="text" id="nombre" placeholder="¿Cómo te llamas?"/>
+      </div>
+      <div class="form-group">
+        <label>WhatsApp / Teléfono</label>
+        <input type="text" id="numero" placeholder="Tu número"/>
+      </div>
+      <div class="form-group">
+        <label>¿Qué necesitas?</label>
+        <textarea id="mensaje" placeholder="Cuéntanos qué buscas, talla, color..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="enviarMensaje()">Enviar mensaje 💬</button>
+    </div>
+  </section>
+
+
+  <!-- RESEÑAS -->
+  <section class="resenas-section">
+
+    <div class="resenas-header">
+      <h2>Lo que dicen nuestros <span>clientes</span></h2>
+      <p>Tu opinión nos ayuda a mejorar y a que más personas nos conozcan</p>
+    </div>
+
+    <div class="resenas-contenido">
+
+      <div class="resena-form-wrap">
+        <div class="form-header">
+          <span class="form-icon">✍️</span>
+          <h3>Deja tu reseña</h3>
+          <p>¿Ya compraste con nosotros? ¡Cuéntanos!</p>
+        </div>
+        <div class="form-group">
+          <label>Tu nombre</label>
+          <input type="text" id="resena-nombre" placeholder="¿Cómo te llamas?"/>
+        </div>
+        <div class="form-group">
+          <label>Calificación</label>
+          <div class="estrellas-selector">
+            <span class="estrella" onclick="seleccionarEstrella(1)">★</span>
+            <span class="estrella" onclick="seleccionarEstrella(2)">★</span>
+            <span class="estrella" onclick="seleccionarEstrella(3)">★</span>
+            <span class="estrella" onclick="seleccionarEstrella(4)">★</span>
+            <span class="estrella" onclick="seleccionarEstrella(5)">★</span>
+          </div>
+          <p class="estrellas-texto" id="estrellas-texto">Selecciona una calificación</p>
+        </div>
+        <div class="form-group">
+          <label>Tu comentario</label>
+          <textarea id="resena-comentario" placeholder="Cuéntanos tu experiencia con Urban Style..."></textarea>
+        </div>
+        <button class="btn-primary btn-form" onclick="enviarResena()">Publicar reseña ⭐</button>
+      </div>
+
+      <div class="resenas-lista-wrap">
+        <div id="resenas-stats" class="resenas-stats"></div>
+        <div id="resenas-lista" class="resenas-lista">
+          <p class="sin-resenas">Aún no hay reseñas. ¡Sé el primero! 🌟</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="imgs/logo.png" alt="Urban Style" class="footer-logo-img"/>
+        <p>Moda urbana con actitud.<br/>Hecho con 💛.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="vision.html">Visión</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Ayuda</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+        <a href="guia-tallas.html">Guía de Tallas</a>
+        <a href="envios-devoluciones.html">Envíos y Devoluciones</a>
+        <a href="blog.html">Blog</a>
+        <a href="terminos.html">Términos y Privacidad</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contáctanos</h4>
+        <p>📱 +52 (831) 160-7062</p>
+        <p>📸 @urbanstyle.mx</p>
+        <p>🕐 Lun – Sab · 7:00 am – 10:00 pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Urban Style · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

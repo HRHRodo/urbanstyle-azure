@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Style | Moda Urbana</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="imgs/logo.png" alt="Urban Style" class="logo-img"/>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="hero-tag">✦ Nueva Colección 2026</span>
+      <h1>Viste tu<br/><em>Actitud</em></h1>
+      <p>Ropa que habla por ti. De todos los estilos, calidad real, precio justo.</p>
+      <div class="hero-btns">
+        <a href="productos.html" class="btn-primary">Ver Colección</a>
+        <a href="nosotros.html" class="btn-outline">Conoce más</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-grid">
+        <div class="himg"><img src="imgs/hoodie.jpeg" alt="Hoodie"/></div>
+        <div class="himg"><img src="imgs/camisa.jpeg" alt="Camisa"/></div>
+        <div class="himg"><img src="imgs/cargo.jpeg" alt="Cargo"/></div>
+        <div class="himg"><img src="imgs/jeans-negros.jpeg" alt="Jeans"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>HOODIES</span><span>✦</span><span>CAMISAS</span><span>✦</span>
+      <span>PANTALONES</span><span>✦</span><span>JEANS</span><span>✦</span>
+      <span>MODA URBANA</span><span>✦</span><span>URBAN STYLE</span><span>✦</span>
+      <span>HOODIES</span><span>✦</span><span>CAMISAS</span><span>✦</span>
+      <span>PANTALONES</span><span>✦</span><span>JEANS</span><span>✦</span>
+      <span>MODA URBANA</span><span>✦</span><span>URBAN STYLE</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <section class="section">
+    <div class="section-head">
+      <h2>Explora nuestras <span>categorías</span></h2>
+      <p>Encuentra lo que buscas fácilmente</p>
+    </div>
+    <div class="cat-grid">
+      <a href="productos.html#hoodies" class="cat-card">
+        <div class="cat-emoji">🧥</div>
+        <h3>Hoodies</h3>
+        <p>Cómodos y con estilo</p>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="productos.html#camisas" class="cat-card">
+        <div class="cat-emoji">👕</div>
+        <h3>Camisas</h3>
+        <p>Frescos y casuales</p>
+        <span class="cat-arrow">→</span>
+      </a>
+      <a href="productos.html#pantalones" class="cat-card">
+        <div class="cat-emoji">👖</div>
+        <h3>Pantalones</h3>
+        <p>Jeans con personalidad</p>
+        <span class="cat-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="section bg-dark">
+    <div class="section-head light">
+      <h2>Piezas <span>Destacadas</span></h2>
+      <p>Las favoritas de nuestra colección</p>
+    </div>
+    <div class="productos-grid">
+      <div class="producto-card">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie.jpeg" alt="Hoodie Bebe Sport"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Bebe Sport</h4>
+          <p>Gris melange · Logo bordado</p>
+          <a href="productos.html#hoodies" class="btn-small">Ver →</a>
+        </div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa.jpeg" alt="Camisa Magellan"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Magellan</h4>
+          <p>Verde menta · Talla S</p>
+          <a href="productos.html#camisas" class="btn-small">Ver →</a>
+        </div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-img-wrap">
+          <img src="imgs/cargo.jpeg" alt="Jeans Cargo"/>
+        </div>
+        <div class="prod-info">
+          <h4>Jeans Cargo Celeste</h4>
+          <p>Denim claro · Wide fit</p>
+          <a href="productos.html#pantalones" class="btn-small">Ver →</a>
+        </div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-img-wrap">
+          <img src="imgs/jeans-negros.jpeg" alt="Jeans Negro"/>
+        </div>
+        <div class="prod-info">
+          <h4>Jeans Negro Brillos</h4>
+          <p>Denim oscuro · Cristales</p>
+          <a href="productos.html#pantalones" class="btn-small">Ver →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <h2>¿Listo para tu nuevo look? 🔥</h2>
+    <p>Escríbenos y te ayudamos a encontrar tu pieza perfecta</p>
+    <a href="contacto.html" class="btn-primary">Contáctanos</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="imgs/logo.png" alt="Urban Style" class="footer-logo-img"/>
+        <p>Moda urbana con actitud.<br/>Hecho con 💛.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="vision.html">Visión</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Ayuda</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+        <a href="guia-tallas.html">Guía de Tallas</a>
+        <a href="envios-devoluciones.html">Envíos y Devoluciones</a>
+        <a href="blog.html">Blog</a>
+        <a href="terminos.html">Términos y Privacidad</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contáctanos</h4>
+        <p>📱 +52 (831) 160-7062</p>
+        <p>📸 @urbanstyle.mx</p>
+        <p>🕐 Lun – Sab · 7:00 am – 10:00 pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Urban Style · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

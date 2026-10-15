@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos | Urban Style</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="imgs/logo.png" alt="Urban Style" class="logo-img"/>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html" class="active">Productos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Nuestros <span>Productos</span></h1>
+    <p>Explora toda nuestra colección</p>
+  </div>
+
+  <div class="filtros">
+    <button class="filtro-btn active" onclick="filtrar(this, 'todos')">Todos</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'hoodie')">🧥 Hoodies</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'camisa')">👕 Camisas</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'pantalon')">👖 Pantalones</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'blusa')">👚 Blusas</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'Vestido')">👗 Vestidos</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'faldas')">💃 Faldas</button>
+    <button class="filtro-btn" onclick="filtrar(this, 'zapatos')">👟 Zapatos</button>
+  </div>
+
+  <!-- HOODIES -->
+  <section class="seccion-productos" id="hoodies">
+    <h2 class="seccion-titulo">🧥 Hoodies</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie.jpeg" alt="Hoodie Bebe Sport"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Bebe Sport</h4>
+          <p>Color gris melange con logo bordado en negro. Cómodo y abrigador.</p>
+          <div class="prod-tags"><span>Gris</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sueter nautica .jpeg" alt="Sueter"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Nautica</h4>
+          <p>Color gris · Unisex</p>
+          <div class="prod-tags"><span>Gris</span><span>Talla M</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sueter nike.jpeg" alt="Sueter"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Nike</h4>
+          <p>Color gris · Unisex · Cómodo</p>
+          <div class="prod-tags"><span>Gris casual</span><span>Talla M</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sueter new york .jpeg" alt="Sueter"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Azul</h4>
+          <p>Cómodo · Ideal para frío</p>
+          <div class="prod-tags"><span>Azul</span><span>Talla M</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sudadera moderna.jpg" alt="Hoodie Sport"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Verde</h4>
+          <p>Sueter moderno</p>
+          <div class="prod-tags"><span>Verde</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sudadera verde con rayas.jpg" alt="sudadera rayas"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Verde con Rayas</h4>
+          <p>Sueter verde moderno</p>
+          <div class="prod-tags"><span>Moderno</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie azul.jpg" alt="Hoodie Azul"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Azul</h4>
+          <p>Color azul · Cómodo</p>
+          <div class="prod-tags"><span>Abrigador</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie estrella.jpg" alt="Hoodie Estrella"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Estrella</h4>
+          <p>Cómodo y abrigador</p>
+          <div class="prod-tags"><span>Gris</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie gengar.jpg" alt="Hoodie Gengar"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Gengar</h4>
+          <p>Abrigador y con estilo</p>
+          <div class="prod-tags"><span>Con flow</span><span>Unisex</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie gris con negro.jpg" alt="Hoodie gris con negro"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Gris con Negro</h4>
+          <p>Para todos los estilos</p>
+          <div class="prod-tags"><span>Gris</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie gris.jpg" alt="Hoodie Gris"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Gris</h4>
+          <p>Color gris · Cómodo y abrigador</p>
+          <div class="prod-tags"><span>Gris</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie negra moderna.jpg" alt="Hoodie Negro"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Negro</h4>
+          <p>Cómodo y abrigador</p>
+          <div class="prod-tags"><span>Irresistible</span><span>Unisex</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie negra.jpg" alt="Hoodie Negra"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Negra Casual</h4>
+          <p>Casual</p>
+          <div class="prod-tags"><span>Comoda</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/sueter Snoopy.png" alt="Sueter Snoopy"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Sueter Snoopy</h4>
+          <p>Cómodo y abrigador</p>
+          <div class="prod-tags"><span>Muy popular</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="hoodie">
+        <div class="prod-img-wrap">
+          <img src="imgs/hoodie Negra con Gris.jpg" alt="Hoodie"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Hoodie Negro con Gris</h4>
+          <p>Cómodo y abrigador</p>
+          <div class="prod-tags"><span>Bonito</span><span>Unisex</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAMISAS -->
+  <section class="seccion-productos" id="camisas">
+    <h2 class="seccion-titulo">👕 Camisas</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa.jpeg" alt="Camisa Magellan"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Magellan Outdoors</h4>
+          <p>Manga corta verde menta, tela ligera y transpirable.</p>
+          <div class="prod-tags"><span>Verde menta</span><span>Talla S</span><span>Relaxed Fit</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa2.jpeg" alt="Camisa"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa</h4>
+          <p>Cómoda · Con estilo</p>
+          <div class="prod-tags"><span>Casual</span><span>Talla G</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/playera blanca nike.jpeg" alt="Playera"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Playera Blanca Nike</h4>
+          <p>Cómoda · Con estilo</p>
+          <div class="prod-tags"><span>Playera de moda</span><span>Nike</span><span>Talla M</span></div>
+          <p class="precio">$120.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/playera gris aero.jpeg" alt="Playera Gris"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Playera Gris Aero Postale</h4>
+          <p>Playera de algodón</p>
+          <div class="prod-tags"><span>Playera</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa beige con azul.jpg" alt="Camisa beige"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Beige con Azul</h4>
+          <p>Camisa de algodón con toques de azul</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa beige.jpg" alt="Camisa beige"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Beige</h4>
+          <p>Camisa de algodón · De moda</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$140.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa blanca con rayas.jpg" alt="Camisa blanca"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Blanca con Rayas</h4>
+          <p>Camisa de algodón con rayas</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla M</span></div>
+          <p class="precio">$130.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa con textura.jpg" alt="Camisa texturada"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa con Textura</h4>
+          <p>Camisa de algodón · Muy cool</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla M</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa cuadros.jpg" alt="Camisa cuadros"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa de Cuadros</h4>
+          <p>Camisa de algodón de cuadros</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla M</span></div>
+          <p class="precio">$120.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa cuadros2.jpg" alt="Camisa cuadros 2"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa de Cuadros 2</h4>
+          <p>Camisa de algodón · Ideal para cualquier ocasión</p>
+          <div class="prod-tags"><span>Camisa</span><span>Cuadros</span><span>Talla M</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa guinda.jpg" alt="Camisa guinda"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Guinda</h4>
+          <p>Camisa de algodón · Con estilo</p>
+          <div class="prod-tags"><span>Camisa</span><span>Verano</span><span>Talla G</span></div>
+          <p class="precio">$120.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa manga larga cafe.jpg" alt="Camisa manga larga"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Manga Larga Café</h4>
+          <p>Camisa de algodón · Café</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla G/L</span></div>
+          <p class="precio">$120.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa marron.jpg" alt="Camisa marron"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Marrón</h4>
+          <p>Camisa de algodón · Ideal para ti</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$170.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa negra con rayas.jpg" alt="Camisa negra"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Camisa Negra Elegante</h4>
+          <p>Camisa de algodón · Elegante</p>
+          <div class="prod-tags"><span>Elegante</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$180.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="camisa">
+        <div class="prod-img-wrap">
+          <img src="imgs/camisa negra y blanca.jpg" alt="Camisa Pack"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pack Camisa Negra y Blanca</h4>
+          <p>Camisa de algodón · 2x1</p>
+          <div class="prod-tags"><span>Camisa</span><span>Comoda</span><span>Talla G</span></div>
+          <p class="precio">$120.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PANTALONES -->
+  <section class="seccion-productos" id="pantalones">
+    <h2 class="seccion-titulo">👖 Pantalones</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/cargo.jpeg" alt="Jeans Cargo Celeste"/>
+        </div>
+        <div class="prod-info">
+          <h4>Jeans Cargo Celeste</h4>
+          <p>Denim celeste con bolsillos laterales. Corte recto y amplio.</p>
+          <div class="prod-tags"><span>Celeste</span><span>Cargo</span><span>Wide Fit</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/jeans-negros.jpeg" alt="Jeans Negro Brillos"/>
+        </div>
+        <div class="prod-info">
+          <h4>Jeans Negro con Brillos</h4>
+          <p>Denim oscuro con detalles de cristales. Único y llamativo.</p>
+          <div class="prod-tags"><span>Negro</span><span>Brillos</span><span>Straight</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon baggy gris.jpeg" alt="Pantalon gris"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Baggy Gris</h4>
+          <p>Pantalón Baggy · De moda</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 15</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon ancho con piedras .jpeg" alt="Pantalon con piedras"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Ancho con Piedras</h4>
+          <p>Pantalones anchos con piedras decorativas</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Con piedras</span><span>Talla M</span></div>
+          <p class="precio">$220.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon baggy .jpeg" alt="Pantalon Baggy"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Baggy Azul</h4>
+          <p>Pantalones Baggy · De moda</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 18</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon cargo azul.jpeg" alt="Pantalon cargo"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Cargo Azul</h4>
+          <p>Pantalones anchos con bolsas laterales</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Con bolsas</span><span>Talla 15</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon ancho gris.jpg" alt="Pantalon ancho"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Ancho Gris</h4>
+          <p>Pantalones anchos de moda</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 15</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon mezclilla1.jpg" alt="Pantalon"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Mezclilla</h4>
+          <p>Pantalón claro · De moda</p>
+          <div class="prod-tags"><span>Pantalon</span><span>De moda</span><span>Talla 15</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon mezclilla2.jpg" alt="Pantalon2"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Mezclilla 2</h4>
+          <p>Pantalones claros · Cool</p>
+          <div class="prod-tags"><span>Pantalon</span><span>De moda</span><span>Talla 18</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon ancho4.jpg" alt="Pantalon Ancho"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Baggy</h4>
+          <p>Pantalones anchos Baggy</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Baggy</span><span>Talla 30</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantslon ancho negro5.jpg" alt="Pantalon Ancho Negro"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Baggy Negro</h4>
+          <p>Pantalones anchos Baggy</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Baggy</span><span>Talla 30</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon rasgado6.jpg" alt="Pantalon rasgado"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Azul</h4>
+          <p>Pantalones bonitos con estilo</p>
+          <div class="prod-tags"><span>Pantalon</span><span>Con estilo</span><span>Talla 15</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon6.jpg" alt="Pantalon"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Ancho</h4>
+          <p>Pantalones anchos de moda</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 30</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon 7.jpg" alt="Pantalon ancho"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon</h4>
+          <p>Pantalones anchos con estilo</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 20</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon8.jpg" alt="Pantalon"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Ancho</h4>
+          <p>Pantalones anchos · Muy de moda</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Muy comprado</span><span>Talla 30</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon9.jpg" alt="Pantalon cargo"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon de Moda</h4>
+          <p>Pantalones anchos con estilo</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 15</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalon10.jpg" alt="Pantalon 10"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalon Ancho</h4>
+          <p>Pantalones anchos</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>De moda</span><span>Talla 15</span></div>
+          <p class="precio">$230.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="pantalon">
+        <div class="prod-img-wrap">
+          <img src="imgs/pantalones11.jpg" alt="Pantalones"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Pantalones Anchos · 3 piezas</h4>
+          <p>Pantalones anchos · Promoción</p>
+          <div class="prod-tags"><span>Pantalon Ancho</span><span>Promoción</span><span>Talla 15</span></div>
+          <p class="precio">$600.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BLUSAS -->
+  <section class="seccion-productos" id="blusas">
+    <h2 class="seccion-titulo">👚 Blusas</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa flores.jpeg" alt="Blusa Floral"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Floral</h4>
+          <p>Color verde</p>
+          <div class="prod-tags"><span>Verde</span><span>Talla M</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa rosa cuadros .jpeg" alt="Blusa Rosa"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Rosa Cuadros</h4>
+          <p>Color rosa · Sin mangas</p>
+          <div class="prod-tags"><span>Rosa</span><span>Talla S</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa naranja.jpeg" alt="Blusa Naranja"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Naranja</h4>
+          <p>Color naranja</p>
+          <div class="prod-tags"><span>Naranja</span><span>Talla M</span></div>
+          <p class="precio">$60.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa blanca .jpeg" alt="Blusa blanca"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Blanca</h4>
+          <p>Color blanca · Sin mangas</p>
+          <div class="prod-tags"><span>Blanca</span><span>Talla S</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa roja.jpeg" alt="Blusa roja"/>
+          <span class="badge new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Roja</h4>
+          <p>Color roja · Con mangas</p>
+          <div class="prod-tags"><span>Roja</span><span>Talla M</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa blanca con mangas.jpeg" alt="Blusa blanca con mangas"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Blanca con Mangas</h4>
+          <p>Blanca · Cómoda</p>
+          <div class="prod-tags"><span>Blusa cómoda</span><span>Talla M</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa rayas .jpeg" alt="Blusa con rayas"/>
+          <span class="badge">Oferta</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa de Rayas</h4>
+          <p>¡Aprovecha esta oferta!</p>
+          <div class="prod-tags"><span>Cómoda</span><span>Con estilo</span><span>Talla S</span></div>
+          <p class="precio">$40.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="blusa">
+        <div class="prod-img-wrap">
+          <img src="imgs/blusa dorada .jpeg" alt="Blusa dorada"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Blusa Dorada</h4>
+          <p>Dorada · Casual</p>
+          <div class="prod-tags"><span>Blusa cómoda</span><span>Talla S</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VESTIDOS -->
+  <section class="seccion-productos" id="Vestidos">
+    <h2 class="seccion-titulo">👗 Vestidos</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido Zara .jpeg" alt="Vestido Zara"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Blanco Zara</h4>
+          <p>Color blanco · Sin mangas</p>
+          <div class="prod-tags"><span>Blanco</span><span>Talla M</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido verde.jpeg" alt="Vestido"/>
+          <span class="badge">Casual</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Verde</h4>
+          <p>Color verde · Cómodo</p>
+          <div class="prod-tags"><span>Verde</span><span>Talla S</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido azul .jpeg" alt="Vestido"/>
+          <span class="badge">En rebaja</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Azul</h4>
+          <p>Color azul · Para fiesta</p>
+          <div class="prod-tags"><span>Azul</span><span>Talla G</span></div>
+          <p class="precio">$180.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido blanco.jpeg" alt="Vestido"/>
+          <span class="badge">25% descuento</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Blanco Casual</h4>
+          <p>Color blanco · Casual · Cómodo</p>
+          <div class="prod-tags"><span>Blanco</span><span>Talla M</span></div>
+          <p class="precio">$220.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido blanco con azul .jpeg" alt="Vestido juvenil"/>
+          <span class="badge">Oferta</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Casual</h4>
+          <p>Cómodo · Ideal para cualquier ocasión</p>
+          <div class="prod-tags"><span>Casual</span><span>Talla M</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido niña.jpeg" alt="Vestido para niñas"/>
+          <span class="badge">De niña</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido para Niña</h4>
+          <p>Color melón · De niña</p>
+          <div class="prod-tags"><span>Melón</span><span>Talla S</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido morado niña.jpeg" alt="Vestido"/>
+          <span class="badge">De niña</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Morado Niña</h4>
+          <p>Color morado · Ideal para fiesta</p>
+          <div class="prod-tags"><span>Morado</span><span>Talla S</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido rosa niña .jpeg" alt="Vestido para niñas"/>
+          <span class="badge">De niña</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Rosa Niña</h4>
+          <p>Color rosa · Ideal para fiesta</p>
+          <div class="prod-tags"><span>Rosa</span><span>Talla 3 años</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido blanco con rosa niña .jpeg" alt="Vestido para niña"/>
+          <span class="badge">De niña</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Blanco con Rosa</h4>
+          <p>Cómodo · Ideal para niñas</p>
+          <div class="prod-tags"><span>Blanco y rosa</span><span>Talla 3 años</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="Vestido">
+        <div class="prod-img-wrap">
+          <img src="imgs/vestido blanco niña .jpeg" alt="Vestido para niñas"/>
+          <span class="badge">De niña</span>
+        </div>
+        <div class="prod-info">
+          <h4>Vestido Blanco Niña</h4>
+          <p>Ideal para fiesta</p>
+          <div class="prod-tags"><span>Vestido niña</span><span>Talla 3 años</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FALDAS -->
+  <section class="seccion-productos" id="faldas">
+    <h2 class="seccion-titulo">💃 Faldas</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="faldas">
+        <div class="prod-img-wrap">
+          <img src="imgs/falda blanca Zara .jpeg" alt="Falda blanca Zara"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Falda Zara</h4>
+          <p>Cómoda · Con estilo</p>
+          <div class="prod-tags"><span>Falda Zara</span><span>Talla M</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="faldas">
+        <div class="prod-img-wrap">
+          <img src="imgs/falda cuadros.jpeg" alt="Falda de cuadros"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Falda de Cuadros</h4>
+          <p>Falda cómoda</p>
+          <div class="prod-tags"><span>Con estilo</span><span>Talla M</span></div>
+          <p class="precio">$50.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="faldas">
+        <div class="prod-img-wrap">
+          <img src="imgs/falda mezclilla .jpeg" alt="Falda de Mezclilla"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="prod-info">
+          <h4>Falda Mezclilla</h4>
+          <p>Para cualquier ocasión</p>
+          <div class="prod-tags"><span>Azul</span><span>Talla M</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="faldas">
+        <div class="prod-img-wrap">
+          <img src="imgs/falda negra deportiva .jpeg" alt="Falda deportiva"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Falda Deportiva</h4>
+          <p>Ideal para hacer ejercicio con estilo</p>
+          <div class="prod-tags"><span>Deportiva</span><span>Talla M</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="faldas">
+        <div class="prod-img-wrap">
+          <img src="imgs/falda roja .jpeg" alt="Falda Roja"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Falda Roja</h4>
+          <p>Cómoda · Ideal para cualquier ocasión</p>
+          <div class="prod-tags"><span>Roja</span><span>Talla M</span></div>
+          <p class="precio">$70.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ZAPATOS -->
+  <section class="seccion-productos" id="zapatos">
+    <h2 class="seccion-titulo">👟 Zapatos</h2>
+    <div class="productos-grid">
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis magellan .jpeg" alt="Tenis Magellan"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Magellan</h4>
+          <p>Cómodos · Con estilo · Para cualquier ocasión</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 20</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis blanco con cafe.jpg" alt="Tenis"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis de Plataforma</h4>
+          <p>Con estilo</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 25</span></div>
+          <p class="precio">$200.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis blancos.jpg" alt="Tenis blancos"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Blancos para Mujer</h4>
+          <p>Ideal para cualquier ocasión</p>
+          <div class="prod-tags"><span>Tenis</span><span>Blancos</span><span>Talla 25</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis nike blanco con negro.jpg" alt="Tenis nike"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Nike</h4>
+          <p>Con flow</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 27.5</span></div>
+          <p class="precio">$700.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis vans cuadros.jpg" alt="Tenis Vans"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Vans</h4>
+          <p>Cómodos</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 27.5</span></div>
+          <p class="precio">$700.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis nike.jfif" alt="Tenis Nike"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Nike</h4>
+          <p>Cómodos</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 20.5</span></div>
+          <p class="precio">$1000.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis blanco suela gruesa.jfif" alt="Tenis"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis Blancos Suela Gruesa</h4>
+          <p>Cómodos</p>
+          <div class="prod-tags"><span>Tenis</span><span>Suela gruesa</span><span>Talla 25</span></div>
+          <p class="precio">$250.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis niña.jpeg" alt="Tenis niña"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis de Niña</h4>
+          <p>Cómodos · Para las pequeñas</p>
+          <div class="prod-tags"><span>De niña</span><span>De moda</span><span>Talla 25</span></div>
+          <p class="precio">$150.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+      <div class="producto-card" data-cat="zapatos">
+        <div class="prod-img-wrap">
+          <img src="imgs/tenis niño.jpeg" alt="Tenis Negros para niño"/>
+          <span class="badge">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h4>Tenis de Niño</h4>
+          <p>Cómodos · Con estilo</p>
+          <div class="prod-tags"><span>Tenis</span><span>Cómodos</span><span>Talla 20</span></div>
+          <p class="precio">$100.00</p>
+          <button class="btn-comprar" onclick="comprar(this)">🛒 Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODALES -->
+  <div class="modal-overlay" id="modalCompra">
+    <div class="modal">
+      <span class="check">🛒</span>
+      <img id="modalImg" src="" alt="" style="width:100px;height:100px;object-fit:cover;border-radius:10px;margin-bottom:12px;"/>
+      <h2 id="modalNombre"></h2>
+      <p id="modalPrecio" style="font-size:20px;font-weight:800;color:#D63031;"></p>
+      <p>¿Confirmas tu compra?</p>
+      <div class="modal-btns">
+        <button class="btn-primary" onclick="confirmarCompra()">✅ Sí, confirmar</button>
+        <button class="btn-outline" style="color:#333;border-color:#ccc;" onclick="cerrarModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalExito">
+    <div class="modal">
+      <span class="check">✅</span>
+      <h2>¡Compra Registrada!</h2>
+      <p>Tu compra quedó guardada exitosamente.</p>
+      <div class="modal-btns">
+        <button class="btn-primary" onclick="verMisCompras()">Ver mis compras</button>
+        <button class="btn-outline" style="color:#333;border-color:#ccc;" onclick="cerrarExito()">Seguir viendo</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="imgs/logo.png" alt="Urban Style" class="footer-logo-img"/>
+        <p>Moda urbana con actitud.<br/>Hecho con 💛.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="vision.html">Visión</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Ayuda</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+        <a href="guia-tallas.html">Guía de Tallas</a>
+        <a href="envios-devoluciones.html">Envíos y Devoluciones</a>
+        <a href="blog.html">Blog</a>
+        <a href="terminos.html">Términos y Privacidad</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contáctanos</h4>
+        <p>📱 +52 (831) 160-7062</p>
+        <p>📸 @urbanstyle.mx</p>
+        <p>🕐 Lun – Sab · 7:00 am – 10:00 pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Urban Style · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
